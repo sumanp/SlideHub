@@ -64,9 +64,11 @@ gem 'ransack'
 gem 'meta-tags'
 gem 'sitemap_generator'
 # AWS!!
-gem 'aws-sdk', '~> 2.6'
-gem 'aws-sdk-core'
-gem 'aws-sdk-resources'
+# gem 'aws-sdk', '~> 2.6'
+# gem 'aws-sdk-core'
+# gem 'aws-sdk-resources'
+
+gem 'aws-sdk', '~> 3'
 # Azure
 gem 'azure', '= 0.7.6'
 # gem 'azure-contrib', git: 'https://github.com/dmichael/azure-contrib.git'
@@ -89,9 +91,8 @@ gem 'momentjs-rails', '~> 2.17.1'
 # https://github.com/alexspeller/non-stupid-digest-assets
 gem 'non-stupid-digest-assets'
 # Upload images to Cloud
-# gem 'paperclip'
-gem 'paperclip', git: 'https://github.com/thoughtbot/paperclip.git', ref: '915c904d9a1382f53f4dcc822878ebb7c2024bb6'
-gem 'paperclip-azure', '~> 0.3.0'
+gem 'paperclip'
+gem 'paperclip-azure'
 # see http://blog.zeit.io/use-a-fake-db-adapter-to-play-nice-with-rails-assets-precompilation/
 gem 'activerecord-nulldb-adapter'
 # reserved words for username
@@ -100,6 +101,9 @@ gem 'reserved_word'
 gem 'yaml_db'
 # i18n for enum
 gem 'enum_help'
+
+#gem "aws-sdk-s3", require: false
+#gem "azure-storage", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
