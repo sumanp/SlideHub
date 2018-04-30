@@ -69,12 +69,10 @@ gem 'sitemap_generator'
 # gem 'aws-sdk-resources'
 
 gem 'aws-sdk', '~> 3'
+# gem "aws-sdk-s3", require: false
 # Azure
-gem 'azure', '= 0.7.6'
-# gem 'azure-contrib', git: 'https://github.com/dmichael/azure-contrib.git'
-gem 'azure-contrib', git: 'https://github.com/ryuzee/azure-contrib.git', ref: 'b74076c'
-gem 'azure-core', '= 0.1.5'
-# gem 'azure-storage', '~> 0.12.0'
+gem 'azure'
+gem "azure-storage"
 # Find file type
 gem 'ruby-filemagic'
 # Handle images
@@ -101,9 +99,6 @@ gem 'reserved_word'
 gem 'yaml_db'
 # i18n for enum
 gem 'enum_help'
-
-#gem "aws-sdk-s3", require: false
-#gem "azure-storage", require: false
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
