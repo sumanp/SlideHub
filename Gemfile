@@ -81,12 +81,14 @@ gem 'counter_culture'
 gem 'unicorn'
 # Datetime Picker for Bootstrap3
 gem 'bootstrap3-datetimepicker-rails', '~> 4.17.47'
-gem 'momentjs-rails', '~> 2.17.1'
+gem 'momentjs-rails'
 # https://github.com/alexspeller/non-stupid-digest-assets
 gem 'non-stupid-digest-assets'
 # Upload images to Cloud
 gem 'paperclip'
-gem 'paperclip-azure'
+# https://github.com/supportify/paperclip-azure/pull/15
+# gem 'paperclip-azure'
+gem 'paperclip-azure', git: 'https://github.com/kinkade/paperclip-azure', branch: 'api_update_azure_storage'
 # see http://blog.zeit.io/use-a-fake-db-adapter-to-play-nice-with-rails-assets-precompilation/
 gem 'activerecord-nulldb-adapter'
 # reserved words for username
